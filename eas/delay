@@ -1,0 +1,9 @@
+#!/bin/bash
+#delay_num=$(ps aux | grep -o "/usr/local/eas/delay" | wc -l) #统计delay进程数量
+#if [ $delay_num -le 3 ];then       #判断是否有同一进程
+drop=$(iptables -L white_list -nv) #列出白名单规则
+if [[ ! $drop =~ "DROP" ]];then    #是否存在DROP规则，不存在就定时60秒加锁，防止非白名单访问网络
+	sleep 5                       #延迟时间
+    iptables -A white_list -j DROP #加锁，防止非白名单用户访问
+fi
+#fi

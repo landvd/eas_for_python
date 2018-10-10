@@ -1,0 +1,2894 @@
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:81/ (Press CTRL+C to quit)
+192.168.1.38 - - [22/Aug/2018 21:29:12] "GET /status HTTP/1.1" 200 -
+192.168.1.38 - - [22/Aug/2018 21:29:13] "GET /static/css/style.css HTTP/1.1" 200 -
+192.168.1.38 - - [22/Aug/2018 21:29:13] "GET /static/images/bg.jpg HTTP/1.1" 200 -
+192.168.1.40 - - [22/Aug/2018 21:30:48] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.40 - - [22/Aug/2018 21:30:50] "GET / HTTP/1.1" 302 -
+192.168.1.40 - - [22/Aug/2018 21:30:50] "GET /login?mac=4c%3A49%3Ae3%3A54%3A89%3A7c HTTP/1.1" 200 -
+192.168.1.40 - - [22/Aug/2018 21:30:50] "GET /static/static/images/bg.jpg HTTP/1.1" 404 -
+192.168.1.40 - - [22/Aug/2018 21:30:50] "GET /static/images/user.png HTTP/1.1" 404 -
+192.168.1.40 - - [22/Aug/2018 21:30:50] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [22/Aug/2018 21:30:59] "GET /login HTTP/1.1" 200 -
+192.168.1.38 - - [22/Aug/2018 21:30:59] "GET /static/images/user.png HTTP/1.1" 404 -
+192.168.1.38 - - [22/Aug/2018 21:30:59] "GET /login HTTP/1.1" 200 -
+192.168.1.38 - - [22/Aug/2018 21:30:59] "GET /static/images/user.png HTTP/1.1" 404 -
+192.168.1.40 - - [22/Aug/2018 21:31:09] "GET /login?mac=4c%3A49%3Ae3%3A54%3A89%3A7c HTTP/1.1" 200 -
+192.168.1.40 - - [22/Aug/2018 21:31:09] "GET /static/images/user.png HTTP/1.1" 404 -
+192.168.1.40 - - [22/Aug/2018 21:31:09] "GET /static/static/images/bg.jpg HTTP/1.1" 404 -
+192.168.1.40 - - [22/Aug/2018 21:31:09] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.40 - - [22/Aug/2018 21:31:38] "GET / HTTP/1.1" 302 -
+192.168.1.40 - - [22/Aug/2018 21:31:38] "GET /login?mac=4c%3A49%3Ae3%3A54%3A89%3A7c HTTP/1.1" 200 -
+192.168.1.40 - - [22/Aug/2018 21:31:38] "GET /static/css/style.css HTTP/1.1" 200 -
+192.168.1.40 - - [22/Aug/2018 21:31:38] "GET /static/images/user.png HTTP/1.1" 404 -
+192.168.1.40 - - [22/Aug/2018 21:31:38] "GET /static/images/bg.jpg HTTP/1.1" 200 -
+192.168.1.40 - - [22/Aug/2018 21:31:38] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.40 - - [22/Aug/2018 21:31:45] "GET /check?user=%E7%B1%B36&mac=4c%3A49%3Ae3%3A54%3A89%3A7c HTTP/1.1" 302 -
+192.168.1.40 - - [22/Aug/2018 21:31:45] "GET /status HTTP/1.1" 200 -
+192.168.1.38 - - [22/Aug/2018 21:49:32] "GET /system HTTP/1.1" 200 -
+192.168.1.38 - - [22/Aug/2018 21:49:32] "GET /static/css/styles.css HTTP/1.1" 200 -
+192.168.1.38 - - [22/Aug/2018 21:49:32] "GET /static/images/logo.jpg HTTP/1.1" 200 -
+192.168.1.38 - - [22/Aug/2018 21:49:32] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.38 - - [22/Aug/2018 21:49:32] "GET /static/images/qr.png HTTP/1.1" 200 -
+192.168.1.38 - - [22/Aug/2018 21:49:34] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.38 - - [22/Aug/2018 21:49:35] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.38 - - [22/Aug/2018 21:49:36] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.38 - - [22/Aug/2018 21:49:37] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.38 - - [22/Aug/2018 21:49:51] "GET /clear_info HTTP/1.1" 302 -
+192.168.1.38 - - [22/Aug/2018 21:49:51] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.38 - - [22/Aug/2018 21:49:52] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.38 - - [22/Aug/2018 21:49:53] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.38 - - [22/Aug/2018 21:49:53] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.38 - - [22/Aug/2018 22:28:42] "GET /check?mac=112233464556&user=%E6%B5%8B%E8%AF%95&button2=%E6%B7%BB%E5%8A%A0 HTTP/1.1" 302 -
+192.168.1.38 - - [22/Aug/2018 22:28:42] "GET /status HTTP/1.1" 200 -
+192.168.1.38 - - [22/Aug/2018 22:28:45] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.38 - - [22/Aug/2018 22:28:54] "GET /changemac?mac_name=%E6%B5%8B%E8%AF%95&mac=11%3A22%3A33%3A46%3A45%3A56&type=white_list_info&button=%E5%88%A0%E9%99%A4 HTTP/1.1" 302 -
+192.168.1.38 - - [22/Aug/2018 22:28:54] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.38 - - [22/Aug/2018 22:45:20] "GET /static/images/user.png HTTP/1.1" 404 -
+192.168.1.40 - - [22/Aug/2018 23:38:34] "GET /login HTTP/1.1" 200 -
+192.168.1.40 - - [22/Aug/2018 23:38:35] "GET /static/images/user.png HTTP/1.1" 404 -
+192.168.1.40 - - [22/Aug/2018 23:38:35] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.5 - - [23/Aug/2018 00:00:00] "GET /black_list.txt HTTP/1.1" 404 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 704, in finish
+    self.wfile.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+192.168.1.4 - - [23/Aug/2018 00:00:00] "GET /black_list.txt HTTP/1.1" 404 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 704, in finish
+    self.wfile.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+192.168.1.40 - - [23/Aug/2018 01:42:32] "GET /system HTTP/1.1" 200 -
+192.168.1.40 - - [23/Aug/2018 01:42:32] "GET /static/images/logo.jpg HTTP/1.1" 200 -
+192.168.1.40 - - [23/Aug/2018 01:42:32] "GET /static/css/styles.css HTTP/1.1" 200 -
+192.168.1.40 - - [23/Aug/2018 01:42:32] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.40 - - [23/Aug/2018 01:42:32] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.40 - - [23/Aug/2018 01:42:32] "GET /static/images/qr.png HTTP/1.1" 200 -
+192.168.1.40 - - [23/Aug/2018 01:42:34] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.40 - - [23/Aug/2018 01:42:36] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.40 - - [23/Aug/2018 01:42:37] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.40 - - [23/Aug/2018 01:42:38] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.40 - - [23/Aug/2018 01:42:46] "GET /system HTTP/1.1" 200 -
+192.168.1.4 - - [24/Aug/2018 00:00:01] "GET /black_list.txt HTTP/1.1" 404 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 704, in finish
+    self.wfile.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+192.168.1.5 - - [24/Aug/2018 00:00:01] "GET /black_list.txt HTTP/1.1" 404 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 704, in finish
+    self.wfile.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+[2018-08-24 00:28:32,369] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 00:28:32] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 704, in finish
+    self.wfile.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+192.168.1.38 - - [24/Aug/2018 00:31:11] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 00:31:11] "GET / HTTP/1.1" 302 -
+192.168.1.38 - - [24/Aug/2018 00:31:11] "GET /status?mac=20%3A6a%3A8a%3A5c%3A42%3A5b HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 00:31:11] "GET /static/css/style.css HTTP/1.1" 304 -
+192.168.1.38 - - [24/Aug/2018 00:31:11] "GET /static/images/bg.jpg HTTP/1.1" 304 -
+192.168.1.38 - - [24/Aug/2018 00:34:07] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 00:34:08] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 00:34:31] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 00:34:43] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 00:34:43] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 00:34:43] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 00:34:44] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 00:36:16] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 00:36:28] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 00:36:32] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 00:36:32] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 00:36:34] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 00:36:37] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 00:36:39] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 00:36:42] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 00:36:54] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 00:36:56] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 00:36:58] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 00:37:01] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 00:37:03] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 00:37:05] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 00:37:13] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 00:37:24] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 00:38:24] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 00:38:33] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 00:38:35] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 00:39:50] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 00:40:02] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 00:40:04] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 00:40:14] "GET /favicon.ico HTTP/1.1" 404 -
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:81/ (Press CTRL+C to quit)
+192.168.1.38 - - [24/Aug/2018 12:35:37] "GET / HTTP/1.1" 302 -
+192.168.1.38 - - [24/Aug/2018 12:35:37] "GET /status?mac=20%3A6a%3A8a%3A5c%3A42%3A5b HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 12:35:37] "GET /static/css/style.css HTTP/1.1" 304 -
+192.168.1.38 - - [24/Aug/2018 12:35:37] "GET /static/images/bg.jpg HTTP/1.1" 304 -
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:81/ (Press CTRL+C to quit)
+192.168.1.38 - - [24/Aug/2018 13:18:02] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:18:03] "GET / HTTP/1.1" 302 -
+192.168.1.38 - - [24/Aug/2018 13:18:04] "GET /status?mac=20%3A6a%3A8a%3A5c%3A42%3A5b HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 13:18:15] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:18:59] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:19:01] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:19:08] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:19:10] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:19:12] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:19:14] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:20:45] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:20:51] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:20:51] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:20:52] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:20:52] "GET / HTTP/1.1" 302 -
+192.168.1.38 - - [24/Aug/2018 13:20:52] "GET /status?mac=20%3A6a%3A8a%3A5c%3A42%3A5b HTTP/1.1" 200 -
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:81/ (Press CTRL+C to quit)
+192.168.1.38 - - [24/Aug/2018 13:22:36] "GET /favicon.ico HTTP/1.1" 404 -
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:81/ (Press CTRL+C to quit)
+192.168.1.38 - - [24/Aug/2018 13:28:51] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:28:51] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:28:52] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:28:52] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:28:59] "GET /favicon.ico HTTP/1.1" 404 -
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:81/ (Press CTRL+C to quit)
+192.168.1.38 - - [24/Aug/2018 13:29:49] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:29:50] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:30:02] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:30:04] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:30:04] "GET / HTTP/1.1" 302 -
+192.168.1.38 - - [24/Aug/2018 13:30:04] "GET /status?mac=20%3A6a%3A8a%3A5c%3A42%3A5b HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 13:30:10] "GET /system HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 13:30:10] "GET /system HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 13:30:10] "GET /static/css/styles.css HTTP/1.1" 304 -
+192.168.1.38 - - [24/Aug/2018 13:30:10] "GET /static/images/logo.jpg HTTP/1.1" 304 -
+192.168.1.38 - - [24/Aug/2018 13:30:10] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 13:30:10] "GET /static/images/qr.png HTTP/1.1" 304 -
+192.168.1.38 - - [24/Aug/2018 13:30:10] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 13:30:12] "GET /info/white_list_info HTTP/1.1" 200 -
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:81/ (Press CTRL+C to quit)
+192.168.1.38 - - [24/Aug/2018 13:30:29] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 13:30:30] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 13:30:30] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 13:30:31] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 13:30:31] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 13:31:11] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:31:38] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 13:31:38] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 13:31:41] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 13:31:42] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 13:31:43] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 13:31:43] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 13:31:43] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 13:31:43] "GET /info/system_info HTTP/1.1" 200 -
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:81/ (Press CTRL+C to quit)
+192.168.1.38 - - [24/Aug/2018 13:36:08] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:36:10] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:36:25] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.1 - - [24/Aug/2018 13:36:27] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 13:36:27,447] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 13:36:27] "GET / HTTP/1.1" 500 -
+[2018-08-24 13:37:27,181] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 13:37:27] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 13:43:37] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 13:43:37,953] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 13:43:37] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 13:43:39] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 13:43:39,755] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 13:43:39] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 13:43:40] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 13:43:40,896] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 13:43:40] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 13:43:43] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:43:47] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 13:44:05,266] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 13:44:05] "GET / HTTP/1.1" 500 -
+[2018-08-24 13:44:06,953] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 13:44:06] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 13:44:09] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 13:44:09,940] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 13:44:09] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 13:44:15] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:44:15] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:44:16] "GET / HTTP/1.1" 302 -
+192.168.1.38 - - [24/Aug/2018 13:44:16] "GET /status?mac=20%3A6a%3A8a%3A5c%3A42%3A5b HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 13:44:22] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.1 - - [24/Aug/2018 13:44:25] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:44:25] "GET /static/css/styles.css HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:44:25] "GET /static/images/logo.jpg HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:44:25] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:44:25] "GET /static/images/qr.png HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:44:26] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:44:27] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:44:28] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:44:28] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:44:29] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:44:30] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:44:31] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:44:31] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:44:31] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:44:32] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:44:33] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 13:44:34] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 13:44:35,294] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 13:44:35] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 13:44:37] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.1 - - [24/Aug/2018 13:45:25] "GET /system HTTP/1.1" 200 -
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:81/ (Press CTRL+C to quit)
+192.168.1.38 - - [24/Aug/2018 13:46:44] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:46:46] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:46:47] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:46:48] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:46:49] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:46:51] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.1 - - [24/Aug/2018 13:46:54] "GET /system HTTP/1.1" 200 -
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:81/ (Press CTRL+C to quit)
+192.168.1.38 - - [24/Aug/2018 13:47:37] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.1 - - [24/Aug/2018 13:47:37] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:47:37] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:47:39] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:47:39] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:47:40] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:47:40] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:47:40] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:47:41] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 13:47:42] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 13:47:43,626] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 13:47:43] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 13:47:45] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 13:48:11] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.1 - - [24/Aug/2018 13:48:44] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:48:44] "GET /static/images/logo.jpg HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:48:44] "GET /static/css/styles.css HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:48:44] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.1 - - [24/Aug/2018 13:48:44] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:48:44] "GET /static/images/qr.png HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:48:47] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:48:48] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:48:49] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:48:51] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:48:52] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:48:54] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:49:44] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:49:44] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:49:46] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 13:49:46] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.1 - - [24/Aug/2018 13:49:48] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:49:50] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:49:51] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 13:49:52] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.1 - - [24/Aug/2018 13:49:54] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:52:44] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:52:45] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 13:52:52] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:07:12] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.1 - - [24/Aug/2018 14:07:12] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:07:12] "GET /static/css/styles.css HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:07:12] "GET /static/images/logo.jpg HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:07:12] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:07:12] "GET /static/images/qr.png HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:07:13] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:07:14] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:07:14] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:07:17] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:07:17] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:07:18] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:07:20] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:07:21] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:07:21] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:07:22] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:08:23] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.1 - - [24/Aug/2018 14:08:23] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:08:23] "GET /static/css/styles.css HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:08:23] "GET /static/images/logo.jpg HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:08:23] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:08:23] "GET /static/images/qr.png HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:09:23] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:10:29] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:10:29] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:10:30] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:10:31] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:10:32] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:10:33] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:10:33] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:10:35] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:10:35] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:10:36] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 14:11:29] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 15:17:34] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 15:17:34] "GET /static/css/styles.css HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 15:17:34] "GET /info/qr_info HTTP/1.1" 200 -
+[2018-08-24 16:35:23,101] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 16:35:23] "GET / HTTP/1.1" 500 -
+192.168.1.1 - - [24/Aug/2018 16:35:28] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 16:35:28] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 16:35:39] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 16:35:40] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 16:35:41] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 16:35:42] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 16:35:42] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 16:35:43] "GET /info/white_list_info HTTP/1.1" 200 -
+[2018-08-24 16:35:45,178] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 16:35:45] "GET / HTTP/1.1" 500 -
+[2018-08-24 17:28:24,154] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 17:28:24] "GET / HTTP/1.1" 500 -
+[2018-08-24 17:28:24,729] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 17:28:24] "GET / HTTP/1.1" 500 -
+[2018-08-24 17:28:29,445] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 17:28:29] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 17:49:11] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 17:49:16] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 17:49:30,045] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 17:49:30] "GET / HTTP/1.1" 500 -
+[2018-08-24 17:50:30,168] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 17:50:30] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 17:51:59] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 17:54:00] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 17:54:22] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 17:54:24] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 17:59:15] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 18:11:01] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:11:02,172] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:11:02] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:11:03] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:11:03,568] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:11:03] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:11:05] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:11:05,840] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:11:05] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:11:07] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:11:07,916] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:11:07] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:11:09] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:11:10,253] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:11:10] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:11:11] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:11:12,487] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:11:12] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:11:13] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:11:13,793] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:11:13] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:11:14] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:11:15,098] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:11:15] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:11:15] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:11:16,531] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:11:16] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:11:17] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:11:17,604] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:11:17] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:11:30] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.1 - - [24/Aug/2018 18:11:34] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:11:34] "GET /static/css/styles.css HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:11:34] "GET /static/images/logo.jpg HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:11:34] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:11:34] "GET /static/images/qr.png HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 18:11:53] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:11:54,298] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_str=ip_pattern.findall(dhcp_str) #������������������������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:11:54] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:11:56] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:11:59,582] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_str=ip_pattern.findall(dhcp_str) #������������������������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:11:59] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:12:00] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:12:01,149] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_str=ip_pattern.findall(dhcp_str) #������������������������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:12:01] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:12:02] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:12:02,678] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_str=ip_pattern.findall(dhcp_str) #������������������������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:12:02] "GET / HTTP/1.1" 500 -
+[2018-08-24 18:13:35,114] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:13:35] "GET / HTTP/1.1" 500 -
+[2018-08-24 18:13:36,346] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:13:36] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:15:38] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:15:39,221] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:15:39] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:15:40] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:15:41,212] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:15:41] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:15:41] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:15:41,828] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:15:41] "GET / HTTP/1.1" 500 -
+[2018-08-24 18:15:42,332] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:15:42] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:15:42] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:15:42,815] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:15:42] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:15:43] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:15:43,386] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:15:43] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:15:44] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:15:44,321] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:15:44] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:15:44] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:15:44,960] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:15:44] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:15:45] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:15:45,520] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:15:45] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:15:45] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:15:46,397] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:15:46] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:15:46] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:15:46,952] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:15:46] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:15:47] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:15:47,519] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:15:47] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:16:36] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:16:37,433] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    iptable_list_status=os.popen("iptables -L white_list -n | grep DROP")
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:16:37] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:16:38] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:16:39,510] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    iptable_list_status=os.popen("iptables -L white_list -n | grep DROP")
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:16:39] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:16:40] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:16:41,162] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    iptable_list_status=os.popen("iptables -L white_list -n | grep DROP")
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:16:41] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:16:41] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:16:41,873] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    iptable_list_status=os.popen("iptables -L white_list -n | grep DROP")
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:16:41] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:16:42] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:16:42,478] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    iptable_list_status=os.popen("iptables -L white_list -n | grep DROP")
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:16:42] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:16:42] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:16:43,010] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    iptable_list_status=os.popen("iptables -L white_list -n | grep DROP")
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:16:43] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:16:43] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:16:43,590] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    iptable_list_status=os.popen("iptables -L white_list -n | grep DROP")
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:16:43] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:16:45] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:16:45,878] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    iptable_list_status=os.popen("iptables -L white_list -n | grep DROP")
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:16:45] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:16:46] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:16:46,549] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    iptable_list_status=os.popen("iptables -L white_list -n | grep DROP")
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:16:46] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:16:53] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 18:17:34] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:17:40,025] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:17:40] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:17:42] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 18:17:51] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 18:17:54] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 18:19:07] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 18:19:25] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:19:28,126] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:19:28] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:20:48] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:20:49,150] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:20:49] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:20:50] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:20:50,670] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:20:50] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:20:51] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:20:51,996] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:20:52] "GET / HTTP/1.1" 500 -
+192.168.1.38 - - [24/Aug/2018 18:20:52] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-08-24 18:20:53,357] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #������ip������������
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:20:53] "GET / HTTP/1.1" 500 -
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:81/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 247-158-668
+192.168.1.38 - - [24/Aug/2018 18:22:14] "GET /favicon.ico HTTP/1.1" 404 -
+/usr/local/lib/python2.7/dist-packages/werkzeug/filesystem.py:63: BrokenFilesystemWarning: Detected a misconfigured UNIX filesystem: Will use UTF-8 as filesystem encoding instead of 'ANSI_X3.4-1968'
+  BrokenFilesystemWarning)
+192.168.1.1 - - [24/Aug/2018 18:22:14] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1741, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #获取ip地址下标
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:22:14] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:22:15] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:22:15] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:22:15] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:22:15] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:22:15] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 18:27:34] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.1 - - [24/Aug/2018 18:27:35] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1741, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #获取ip地址下标
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:27:35] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:27:35] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:27:35] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:27:35] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:27:35] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:27:35] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/usr/local/eas/index.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 247-158-668
+192.168.1.38 - - [24/Aug/2018 18:28:37] "GET /favicon.ico HTTP/1.1" 404 -
+/usr/local/lib/python2.7/dist-packages/werkzeug/filesystem.py:63: BrokenFilesystemWarning: Detected a misconfigured UNIX filesystem: Will use UTF-8 as filesystem encoding instead of 'ANSI_X3.4-1968'
+  BrokenFilesystemWarning)
+192.168.1.1 - - [24/Aug/2018 18:28:37] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1741, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #获取ip地址下标
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:28:37] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:28:37] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:28:37] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:28:37] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:28:38] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:28:38] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/usr/local/eas/index.py", line 250, in <module>
+    app.run(host='0.0.0.0',port=81,debug=True)  #开启http服务器，端口为81,并且打开调试模式
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 125] Address already in use
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/usr/local/eas/index.py", line 250, in <module>
+    app.run(host='0.0.0.0',port=81,debug=True)  #开启http服务器，端口为81,并且打开调试模式
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 125] Address already in use
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/usr/local/eas/index.py", line 250, in <module>
+    app.run(host='0.0.0.0',port=81,debug=True)  #开启http服务器，端口为81,并且打开调试模式
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 125] Address already in use
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/usr/local/eas/index.py", line 250, in <module>
+    
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 125] Address already in use
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:81/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 247-158-668
+192.168.1.38 - - [24/Aug/2018 18:38:57] "GET /favicon.ico HTTP/1.1" 404 -
+ * Detected change in '/usr/local/eas/index.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 247-158-668
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/usr/local/eas/index.py", line 251, in <module>
+    app.run(host='0.0.0.0',port=81,debug=True)  #开启http服务器，端口为81,并且打开调试模式
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 125] Address already in use
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/usr/local/eas/index.py", line 251, in <module>
+    app.run(host='0.0.0.0',port=81,debug=True)  #开启http服务器，端口为81,并且打开调试模式
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 125] Address already in use
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/usr/local/eas/index.py", line 251, in <module>
+    app.run(host='0.0.0.0',port=81,debug=True)  #开启http服务器，端口为81,并且打开调试模式
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 125] Address already in use
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/usr/local/eas/index.py", line 251, in <module>
+    app.run(host='0.0.0.0',port=81,debug=True)  #开启http服务器，端口为81,并且打开调试模式
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 125] Address already in use
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/usr/local/eas/index.py", line 251, in <module>
+    app.run(host='0.0.0.0',port=81,debug=True)  #开启http服务器，端口为81,并且打开调试模式
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 125] Address already in use
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/usr/local/eas/index.py", line 251, in <module>
+    app.run(host='0.0.0.0',port=81,debug=True)  #开启http服务器，端口为81,并且打开调试模式
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 125] Address already in use
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/usr/local/eas/index.py", line 251, in <module>
+    app.run(host='0.0.0.0',port=81,debug=True)  #开启http服务器，端口为81,并且打开调试模式
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 125] Address already in use
+  File "/usr/local/eas/index.py", line 19
+    return redirect('/system')
+         ^
+IndentationError: expected an indented block
+  File "/usr/local/eas/index.py", line 19
+    return redirect('/system')
+         ^
+IndentationError: expected an indented block
+  File "/usr/local/eas/index.py", line 19
+    return redirect('/system')
+         ^
+IndentationError: expected an indented block
+  File "/usr/local/eas/index.py", line 19
+    return redirect('/system')
+         ^
+IndentationError: expected an indented block
+  File "/usr/local/eas/index.py", line 19
+    return redirect('/system')
+         ^
+IndentationError: expected an indented block
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:81/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 247-158-668
+192.168.1.38 - - [24/Aug/2018 18:47:24] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.1 - - [24/Aug/2018 18:47:25] "GET / HTTP/1.1" 302 -
+192.168.1.1 - - [24/Aug/2018 18:47:25] "GET / HTTP/1.1" 302 -
+192.168.1.1 - - [24/Aug/2018 18:47:25] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:47:25] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:47:27] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:47:28] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:47:29] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:47:29] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:48:09] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:48:10] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:48:10] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:48:11] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:48:12] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 18:48:13] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 18:48:19] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.1 - - [24/Aug/2018 18:48:45] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:48:46] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:48:46] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:48:46] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:48:47] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 18:48:48] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [24/Aug/2018 18:51:43] "GET / HTTP/1.1" 302 -
+192.168.1.38 - - [24/Aug/2018 18:51:43] "GET /system HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 18:51:43] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 18:51:51] "GET / HTTP/1.1" 302 -
+192.168.1.38 - - [24/Aug/2018 18:51:51] "GET /system HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 18:51:52] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 18:51:55] "GET / HTTP/1.1" 302 -
+192.168.1.38 - - [24/Aug/2018 18:51:55] "GET /system HTTP/1.1" 200 -
+192.168.1.38 - - [24/Aug/2018 18:51:55] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.40 - - [24/Aug/2018 18:52:22] "GET / HTTP/1.1" 302 -
+192.168.1.40 - - [24/Aug/2018 18:52:22] "GET /system HTTP/1.1" 200 -
+192.168.1.40 - - [24/Aug/2018 18:52:23] "GET /static/css/styles.css HTTP/1.1" 200 -
+192.168.1.40 - - [24/Aug/2018 18:52:23] "GET /static/images/logo.jpg HTTP/1.1" 200 -
+192.168.1.40 - - [24/Aug/2018 18:52:23] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.40 - - [24/Aug/2018 18:52:23] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.40 - - [24/Aug/2018 18:52:23] "GET /static/images/qr.png HTTP/1.1" 200 -
+192.168.1.40 - - [24/Aug/2018 18:52:24] "GET /info/white_list_info HTTP/1.1" 200 -
+ * Detected change in '/usr/local/eas/index.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 247-158-668
+192.168.1.40 - - [24/Aug/2018 18:53:49] "GET / HTTP/1.1" 302 -
+192.168.1.40 - - [24/Aug/2018 18:53:49] "GET /status?mac=4c%3A49%3Ae3%3A54%3A89%3A7c HTTP/1.1" 200 -
+192.168.1.40 - - [24/Aug/2018 18:53:49] "GET /static/css/style.css HTTP/1.1" 200 -
+192.168.1.40 - - [24/Aug/2018 18:53:49] "GET /static/images/bg.jpg HTTP/1.1" 200 -
+192.168.1.40 - - [24/Aug/2018 18:53:49] "GET /favicon.ico HTTP/1.1" 404 -
+/usr/local/lib/python2.7/dist-packages/werkzeug/filesystem.py:63: BrokenFilesystemWarning: Detected a misconfigured UNIX filesystem: Will use UTF-8 as filesystem encoding instead of 'ANSI_X3.4-1968'
+  BrokenFilesystemWarning)
+192.168.1.1 - - [24/Aug/2018 18:54:16] "GET / HTTP/1.1" 500 -
+Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 401, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+192.168.1.1 - - [24/Aug/2018 18:54:17] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1741, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 20, in index
+    ip_index=ip_str.index(client_ip) #获取ip地址下标
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:54:17] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:54:17] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:54:17] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:54:17] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:54:17] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:54:17] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/usr/local/eas/index.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 247-158-668
+/usr/local/lib/python2.7/dist-packages/werkzeug/filesystem.py:63: BrokenFilesystemWarning: Detected a misconfigured UNIX filesystem: Will use UTF-8 as filesystem encoding instead of 'ANSI_X3.4-1968'
+  BrokenFilesystemWarning)
+192.168.1.1 - - [24/Aug/2018 18:56:12] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1741, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #获取ip地址下标
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:56:13] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:56:13] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:56:13] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:56:13] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:56:14] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:56:14] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:56:14] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1741, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #获取ip地址下标
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:56:14] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:56:14] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:56:14] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:56:14] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:56:15] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:56:15] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:56:18] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1741, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 18, in index
+    ip_index=ip_str.index(client_ip) #获取ip地址下标
+ValueError: '192.168.1.1' is not in list
+192.168.1.1 - - [24/Aug/2018 18:56:18] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:56:18] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:56:18] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:56:18] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:56:18] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+192.168.1.1 - - [24/Aug/2018 18:56:18] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/usr/local/eas/index.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 247-158-668
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/usr/local/eas/index.py", line 251, in <module>
+    app.run(host='0.0.0.0',port=81,debug=True)  #开启http服务器，端口为81,并且打开调试模式
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 125] Address already in use
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/usr/local/eas/index.py", line 251, in <module>
+    app.run(host='0.0.0.0',port=81,debug=True)  #开启http服务器，端口为81,并且打开调试模式
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 125] Address already in use
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/usr/local/eas/index.py", line 251, in <module>
+    app.run(host='0.0.0.0',port=81,debug=True)  #开启http服务器，端口为81,并且打开调试模式
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 125] Address already in use
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/usr/local/eas/index.py", line 251, in <module>
+    app.run(host='0.0.0.0',port=81,debug=True)  #开启http服务器，端口为81,并且打开调试模式
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 125] Address already in use
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:81/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 247-158-668
+192.168.1.1 - - [24/Aug/2018 19:00:28] "GET / HTTP/1.1" 200 -
+ * Detected change in '/usr/local/eas/index.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 247-158-668
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/usr/local/eas/index.py", line 251, in <module>
+    app.run(host='0.0.0.0',port=81,debug=True)  #开启http服务器，端口为81,并且打开调试模式
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 125] Address already in use
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/usr/local/eas/index.py", line 251, in <module>
+    app.run(host='0.0.0.0',port=81,debug=True)  #开启http服务器，端口为81,并且打开调试模式
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 125] Address already in use
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/usr/local/eas/index.py", line 251, in <module>
+    app.run(host='0.0.0.0',port=81,debug=True)  #开启http服务器，端口为81,并且打开调试模式
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 125] Address already in use
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/usr/local/eas/index.py", line 251, in <module>
+    app.run(host='0.0.0.0',port=81,debug=True)  #开启http服务器，端口为81,并且打开调试模式
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 125] Address already in use
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/usr/local/eas/index.py", line 251, in <module>
+    app.run(host='0.0.0.0',port=81,debug=True)  #开启http服务器，端口为81,并且打开调试模式
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 125] Address already in use
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/usr/local/eas/index.py", line 251, in <module>
+    app.run(host='0.0.0.0',port=81,debug=True)  #开启http服务器，端口为81,并且打开调试模式
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 125] Address already in use
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/usr/local/eas/index.py", line 251, in <module>
+    app.run(host='0.0.0.0',port=81,debug=True)  #开启http服务器，端口为81,并且打开调试模式
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 125] Address already in use
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/usr/local/eas/index.py", line 251, in <module>
+    app.run(host='0.0.0.0',port=81,debug=True)  #开启http服务器，端口为81,并且打开调试模式
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 125] Address already in use
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/usr/local/eas/index.py", line 251, in <module>
+    app.run(host='0.0.0.0',port=81,debug=True)  #开启http服务器，端口为81,并且打开调试模式
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 125] Address already in use
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:81/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 631-752-390
+192.168.1.1 - - [28/Aug/2018 20:35:50] "GET / HTTP/1.1" 302 -
+192.168.1.1 - - [28/Aug/2018 20:35:50] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:35:50] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:35:51] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:35:52] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:35:52] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:35:53] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:35:53] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:35:53] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:35:53] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:35:54] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:35:54] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:38:57] "GET / HTTP/1.1" 302 -
+192.168.1.1 - - [28/Aug/2018 20:38:57] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.1 - - [28/Aug/2018 20:38:57] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:38:57] "GET /static/css/styles.css HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:38:57] "GET /static/images/logo.jpg HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:38:58] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:38:58] "GET /static/images/qr.png HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:39:00] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:39:56] "GET / HTTP/1.1" 302 -
+192.168.1.1 - - [28/Aug/2018 20:39:56] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:39:57] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:40:46] "GET /login.php HTTP/1.1" 404 -
+192.168.1.1 - - [28/Aug/2018 20:40:48] "GET / HTTP/1.1" 302 -
+192.168.1.1 - - [28/Aug/2018 20:40:48] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:40:48] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:40:50] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:40:50] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:40:50] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:40:51] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:40:51] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:40:52] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:41:46] "GET /login.php HTTP/1.1" 404 -
+192.168.1.1 - - [28/Aug/2018 20:44:22] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:44:23] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:44:23] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:44:24] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:44:26] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:44:26] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [28/Aug/2018 20:44:28] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.5 - - [29/Aug/2018 00:00:00] "GET /black_list.txt HTTP/1.1" 404 -
+/usr/local/lib/python2.7/dist-packages/werkzeug/filesystem.py:63: BrokenFilesystemWarning: Detected a misconfigured UNIX filesystem: Will use UTF-8 as filesystem encoding instead of 'ANSI_X3.4-1968'
+  BrokenFilesystemWarning)
+Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 238, in write
+    self.send_header('Date', self.date_time_string())
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 401, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 131] Connection reset by peer
+192.168.1.4 - - [29/Aug/2018 00:00:00] "GET /black_list.txt HTTP/1.1" 404 -
+192.168.1.1 - - [29/Aug/2018 18:54:08] "GET / HTTP/1.1" 302 -
+192.168.1.1 - - [29/Aug/2018 18:54:08] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [29/Aug/2018 18:54:08] "GET /static/css/styles.css HTTP/1.1" 200 -
+192.168.1.1 - - [29/Aug/2018 18:54:08] "GET /static/images/logo.jpg HTTP/1.1" 200 -
+192.168.1.1 - - [29/Aug/2018 18:54:09] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [29/Aug/2018 18:54:09] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.1 - - [29/Aug/2018 18:54:09] "GET /static/images/qr.png HTTP/1.1" 200 -
+192.168.1.1 - - [29/Aug/2018 18:54:18] "GET /system1001EAS%E9%98%B2%E8%B9%AD%E7%BD%91%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E9%A1%B5 HTTP/1.1" 404 -
+192.168.1.1 - - [29/Aug/2018 18:54:18] "GET /system1001EAS%E9%98%B2%E8%B9%AD%E7%BD%91%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E9%A1%B5 HTTP/1.1" 404 -
+192.168.1.1 - - [29/Aug/2018 18:54:18] "GET /system1001EAS%E9%98%B2%E8%B9%AD%E7%BD%91%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E9%A1%B5 HTTP/1.1" 404 -
+192.168.1.1 - - [29/Aug/2018 18:54:19] "GET /system1001EAS%E9%98%B2%E8%B9%AD%E7%BD%91%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E9%A1%B5 HTTP/1.1" 404 -
+192.168.1.1 - - [29/Aug/2018 18:54:19] "GET /system1001EAS%E9%98%B2%E8%B9%AD%E7%BD%91%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E9%A1%B5 HTTP/1.1" 404 -
+192.168.1.1 - - [29/Aug/2018 18:55:00] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [29/Aug/2018 18:55:00] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.1 - - [29/Aug/2018 18:55:00] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [29/Aug/2018 18:55:07] "GET /system1001EAS%E9%98%B2%E8%B9%AD%E7%BD%91%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E9%A1%B5 HTTP/1.1" 404 -
+192.168.1.1 - - [29/Aug/2018 18:55:07] "GET /system1001EAS%E9%98%B2%E8%B9%AD%E7%BD%91%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E9%A1%B5 HTTP/1.1" 404 -
+192.168.1.1 - - [29/Aug/2018 18:55:07] "GET /system1001EAS%E9%98%B2%E8%B9%AD%E7%BD%91%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E9%A1%B5 HTTP/1.1" 404 -
+192.168.1.1 - - [29/Aug/2018 18:55:07] "GET /system1001EAS%E9%98%B2%E8%B9%AD%E7%BD%91%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E9%A1%B5 HTTP/1.1" 404 -
+192.168.1.1 - - [29/Aug/2018 18:55:08] "GET /system1001EAS%E9%98%B2%E8%B9%AD%E7%BD%91%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E9%A1%B5 HTTP/1.1" 404 -
+192.168.1.1 - - [29/Aug/2018 18:55:08] "GET /system1001EAS%E9%98%B2%E8%B9%AD%E7%BD%91%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E9%A1%B5 HTTP/1.1" 404 -
+192.168.1.1 - - [29/Aug/2018 18:55:08] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [29/Aug/2018 18:55:09] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [29/Aug/2018 18:55:20] "GET /system1001EAS%E9%98%B2%E8%B9%AD%E7%BD%91%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E9%A1%B5 HTTP/1.1" 404 -
+192.168.1.1 - - [29/Aug/2018 18:55:20] "GET /system1001EAS%E9%98%B2%E8%B9%AD%E7%BD%91%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E9%A1%B5 HTTP/1.1" 404 -
+192.168.1.1 - - [29/Aug/2018 18:55:20] "GET /system1001EAS%E9%98%B2%E8%B9%AD%E7%BD%91%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E9%A1%B5 HTTP/1.1" 404 -
+192.168.1.1 - - [29/Aug/2018 18:55:20] "GET /system1001EAS%E9%98%B2%E8%B9%AD%E7%BD%91%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E9%A1%B5 HTTP/1.1" 404 -
+192.168.1.1 - - [29/Aug/2018 18:55:20] "GET /system1001EAS%E9%98%B2%E8%B9%AD%E7%BD%91%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E9%A1%B5 HTTP/1.1" 404 -
+192.168.1.1 - - [29/Aug/2018 18:55:42] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [29/Aug/2018 18:55:42] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [29/Aug/2018 18:55:42] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.1 - - [29/Aug/2018 19:04:14] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [29/Aug/2018 19:04:14] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [29/Aug/2018 19:04:14] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.1 - - [29/Aug/2018 19:04:14] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.1 - - [29/Aug/2018 19:04:15] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [29/Aug/2018 19:04:20] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [29/Aug/2018 19:04:21] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.1 - - [29/Aug/2018 19:04:24] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.1 - - [29/Aug/2018 19:04:25] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [29/Aug/2018 19:04:26] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [29/Aug/2018 19:05:15] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [29/Aug/2018 19:05:20] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [29/Aug/2018 19:05:21] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.1 - - [29/Aug/2018 19:05:24] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.5 - - [30/Aug/2018 00:00:01] "GET /black_list.txt HTTP/1.1" 404 -
+192.168.1.4 - - [30/Aug/2018 00:00:01] "GET /black_list.txt HTTP/1.1" 404 -
+192.168.1.1 - - [30/Aug/2018 06:15:45] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [30/Aug/2018 06:15:47] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.1 - - [30/Aug/2018 06:15:47] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [30/Aug/2018 06:15:49] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [30/Aug/2018 06:16:49] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [30/Aug/2018 13:48:27] "GET / HTTP/1.1" 302 -
+192.168.1.1 - - [30/Aug/2018 13:48:27] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [30/Aug/2018 13:48:27] "GET /static/css/styles.css HTTP/1.1" 304 -
+192.168.1.1 - - [30/Aug/2018 13:48:27] "GET /static/images/logo.jpg HTTP/1.1" 304 -
+192.168.1.1 - - [30/Aug/2018 13:48:27] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [30/Aug/2018 13:48:28] "GET /static/images/qr.png HTTP/1.1" 304 -
+192.168.1.1 - - [30/Aug/2018 13:48:29] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [30/Aug/2018 13:48:29] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [30/Aug/2018 13:48:30] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.1 - - [30/Aug/2018 13:48:31] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [30/Aug/2018 13:48:32] "GET /info/system_info HTTP/1.1" 200 -
+Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 401, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+192.168.1.1 - - [30/Aug/2018 13:49:27] "GET / HTTP/1.1" 302 -
+192.168.1.1 - - [30/Aug/2018 13:49:27] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [30/Aug/2018 13:49:28] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [30/Aug/2018 15:48:09] "GET /static/css/styles.css HTTP/1.1" 304 -
+192.168.1.38 - - [30/Aug/2018 20:54:15] "GET / HTTP/1.1" 302 -
+192.168.1.38 - - [30/Aug/2018 20:54:15] "GET /status?mac=20%3A6a%3A8a%3A5c%3A42%3A5b HTTP/1.1" 200 -
+192.168.1.38 - - [30/Aug/2018 20:54:16] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.38 - - [30/Aug/2018 20:54:17] "GET /static/css/style.css HTTP/1.1" 304 -
+192.168.1.38 - - [30/Aug/2018 20:54:18] "GET /static/images/bg.jpg HTTP/1.1" 304 -
+192.168.1.38 - - [30/Aug/2018 20:54:22] "GET / HTTP/1.1" 302 -
+192.168.1.38 - - [30/Aug/2018 20:54:23] "GET /status?mac=20%3A6a%3A8a%3A5c%3A42%3A5b HTTP/1.1" 200 -
+192.168.1.1 - - [30/Aug/2018 20:55:49] "GET / HTTP/1.1" 302 -
+192.168.1.1 - - [30/Aug/2018 20:55:49] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [30/Aug/2018 20:55:49] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [30/Aug/2018 20:55:51] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [30/Aug/2018 20:56:49] "GET / HTTP/1.1" 302 -
+192.168.1.1 - - [30/Aug/2018 20:56:49] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [30/Aug/2018 20:57:21] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [30/Aug/2018 20:57:22] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [30/Aug/2018 20:57:23] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [30/Aug/2018 20:57:23] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.1 - - [30/Aug/2018 20:57:26] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.1 - - [30/Aug/2018 20:57:31] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [30/Aug/2018 20:57:31] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [30/Aug/2018 20:57:32] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [30/Aug/2018 20:57:39] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.1 - - [30/Aug/2018 20:57:40] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.1 - - [30/Aug/2018 21:00:44] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.1 - - [30/Aug/2018 21:00:46] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.1 - - [30/Aug/2018 21:00:48] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.4 - - [31/Aug/2018 00:00:00] "GET /black_list.txt HTTP/1.1" 404 -
+192.168.1.5 - - [31/Aug/2018 00:00:01] "GET /black_list.txt HTTP/1.1" 404 -
+192.168.1.1 - - [31/Aug/2018 20:42:47] "GET / HTTP/1.1" 302 -
+192.168.1.1 - - [31/Aug/2018 20:42:47] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [31/Aug/2018 20:42:47] "GET /static/css/styles.css HTTP/1.1" 304 -
+192.168.1.1 - - [31/Aug/2018 20:42:47] "GET /static/images/logo.jpg HTTP/1.1" 304 -
+192.168.1.1 - - [31/Aug/2018 20:42:47] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [31/Aug/2018 20:42:47] "GET /static/images/qr.png HTTP/1.1" 304 -
+192.168.1.1 - - [31/Aug/2018 20:42:48] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [31/Aug/2018 20:43:47] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [31/Aug/2018 20:50:02] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.204 - - [31/Aug/2018 20:50:49] "GET /wx?weixin_wifi_shopId=6396206&weixin_wifi_bssid=&originid=&jumpsrc=jumpfromfinishpage&isContact=0&weixin_wifi_ssid=&openId= HTTP/1.1" 302 -
+192.168.1.204 - - [31/Aug/2018 20:50:50] "GET / HTTP/1.1" 302 -
+192.168.1.204 - - [31/Aug/2018 20:50:50] "GET /status?mac=c0%3A9f%3A05%3Af9%3Aef%3A80 HTTP/1.1" 200 -
+192.168.1.204 - - [31/Aug/2018 20:50:50] "GET /static/css/style.css HTTP/1.1" 200 -
+192.168.1.204 - - [31/Aug/2018 20:50:50] "GET /static/images/bg.jpg HTTP/1.1" 200 -
+Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 242, in write
+    self.wfile.write(data)
+IOError: [Errno 32] Broken pipe
+192.168.1.204 - - [31/Aug/2018 20:50:50] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.204 - - [31/Aug/2018 20:51:10] "GET /wx?weixin_wifi_shopId=6396206&weixin_wifi_bssid=20:76:93:3a:b4:e2&originid=&jumpsrc=jumpfromfinishpage&isContact=0&weixin_wifi_ssid=WX%E4%BD%A0%E4%B8%BA%E4%BD%95%E6%94%BE%E5%BC%83%E6%B2%BB%E7%96%97?&openId= HTTP/1.1" 302 -
+192.168.1.204 - - [31/Aug/2018 20:51:10] "GET / HTTP/1.1" 302 -
+192.168.1.204 - - [31/Aug/2018 20:51:10] "GET /status?mac=c0%3A9f%3A05%3Af9%3Aef%3A80 HTTP/1.1" 200 -
+192.168.1.204 - - [31/Aug/2018 20:51:10] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.204 - - [31/Aug/2018 20:51:34] "GET /wx?weixin_wifi_shopId=6396206&weixin_wifi_bssid=20:76:93:3a:b4:e2&originid=&jumpsrc=jumpfromfinishpage&isContact=0&weixin_wifi_ssid=WX%E4%BD%A0%E4%B8%BA%E4%BD%95%E6%94%BE%E5%BC%83%E6%B2%BB%E7%96%97?&openId= HTTP/1.1" 302 -
+192.168.1.204 - - [31/Aug/2018 20:51:34] "GET / HTTP/1.1" 302 -
+192.168.1.204 - - [31/Aug/2018 20:51:34] "GET /status?mac=c0%3A9f%3A05%3Af9%3Aef%3A80 HTTP/1.1" 200 -
+192.168.1.1 - - [31/Aug/2018 21:02:19] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [31/Aug/2018 21:12:05] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [31/Aug/2018 21:12:34] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [31/Aug/2018 21:12:36] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.1 - - [31/Aug/2018 21:13:31] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [31/Aug/2018 21:13:32] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [31/Aug/2018 21:13:34] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.1 - - [31/Aug/2018 21:15:18] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:19:50] "GET /system HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:19:50] "GET /static/css/styles.css HTTP/1.1" 304 -
+192.168.1.41 - - [31/Aug/2018 21:19:50] "GET /system HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:19:50] "GET /static/images/logo.jpg HTTP/1.1" 304 -
+192.168.1.41 - - [31/Aug/2018 21:19:50] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:19:50] "GET /static/images/qr.png HTTP/1.1" 304 -
+192.168.1.41 - - [31/Aug/2018 21:19:50] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:19:52] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:20:27] "GET /system HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:20:27] "GET /static/css/styles.css HTTP/1.1" 304 -
+192.168.1.41 - - [31/Aug/2018 21:20:27] "GET /static/images/logo.jpg HTTP/1.1" 304 -
+192.168.1.41 - - [31/Aug/2018 21:20:27] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:20:27] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.41 - - [31/Aug/2018 21:20:27] "GET /static/images/qr.png HTTP/1.1" 304 -
+192.168.1.41 - - [31/Aug/2018 21:20:29] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:21:21] "GET /system HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:21:21] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:21:23] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:21:54] "GET /system HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:21:54] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:21:55] "GET /system HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:21:55] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:21:57] "GET /info/white_list_info HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1741, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 125, in white_list_info
+    return render_template('white_list_info.html',white_list_results=white_list_result,white_list_cmd_results=white_list_cmd_result)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/eas/templates/white_list_info.html", line 36, in template
+    {% endfor %}
+TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+192.168.1.41 - - [31/Aug/2018 21:21:57] "GET /info/white_list_info?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:21:57] "GET /info/white_list_info?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:21:57] "GET /info/white_list_info?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:21:57] "GET /info/white_list_info?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:21:57] "GET /info/white_list_info?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:22:18] "GET /system HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:22:18] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:22:20] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:22:58] "GET /system HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:22:58] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:23:00] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:23:37] "GET /system HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:23:37] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:23:39] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:25:14] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:25:56] "GET /system HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:25:56] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:25:58] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:28:26] "GET /system HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:28:26] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:28:28] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [31/Aug/2018 21:29:20] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.40 - - [31/Aug/2018 21:30:57] "GET /wx?weixin_wifi_shopId=6396206&weixin_wifi_bssid=20:76:93:3a:b4:e2&originid=&jumpsrc=jumpfromfinishpage&isContact=1&weixin_wifi_ssid=WX%E4%BD%A0%E4%B8%BA%E4%BD%95%E6%94%BE%E5%BC%83%E6%B2%BB%E7%96%97?&openId= HTTP/1.1" 302 -
+192.168.1.40 - - [31/Aug/2018 21:30:58] "GET / HTTP/1.1" 302 -
+192.168.1.40 - - [31/Aug/2018 23:36:37] "GET /wx?weixin_wifi_shopId=6396206&weixin_wifi_bssid=20:76:93:3a:b4:e2&originid=&jumpsrc=jumpfromfinishpage&isContact=1&weixin_wifi_ssid=WX%E4%BD%A0%E4%B8%BA%E4%BD%95%E6%94%BE%E5%BC%83%E6%B2%BB%E7%96%97?&openId= HTTP/1.1" 302 -
+192.168.1.40 - - [31/Aug/2018 23:36:37] "GET / HTTP/1.1" 302 -
+192.168.1.40 - - [31/Aug/2018 23:49:11] "GET /wx?weixin_wifi_shopId=6396206&weixin_wifi_bssid=20:76:93:3a:b4:e2&originid=&jumpsrc=jumpfromfinishpage&isContact=1&weixin_wifi_ssid=WX%E4%BD%A0%E4%B8%BA%E4%BD%95%E6%94%BE%E5%BC%83%E6%B2%BB%E7%96%97?&openId= HTTP/1.1" 302 -
+192.168.1.40 - - [31/Aug/2018 23:49:11] "GET / HTTP/1.1" 302 -
+192.168.1.40 - - [31/Aug/2018 23:49:11] "GET /status?mac=4c%3A49%3Ae3%3A54%3A89%3A7c HTTP/1.1" 200 -
+192.168.1.40 - - [31/Aug/2018 23:49:11] "GET /static/css/style.css HTTP/1.1" 200 -
+192.168.1.40 - - [31/Aug/2018 23:49:11] "GET /static/images/bg.jpg HTTP/1.1" 200 -
+192.168.1.40 - - [31/Aug/2018 23:49:11] "GET /favicon.ico HTTP/1.1" 404 -
+Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 242, in write
+    self.wfile.write(data)
+IOError: [Errno 32] Broken pipe
+192.168.1.40 - - [31/Aug/2018 23:49:17] "GET /static/images/bg.jpg HTTP/1.1" 200 -
+Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 242, in write
+    self.wfile.write(data)
+IOError: [Errno 32] Broken pipe
+192.168.1.40 - - [31/Aug/2018 23:53:02] "GET /static/images/bg.jpg HTTP/1.1" 200 -
+192.168.1.40 - - [31/Aug/2018 23:53:03] "GET /static/images/bg.jpg HTTP/1.1" 200 -
+Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 242, in write
+    self.wfile.write(data)
+IOError: [Errno 131] Connection reset by peer
+192.168.1.40 - - [31/Aug/2018 23:53:05] "GET /static/images/bg.jpg HTTP/1.1" 200 -
+Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 242, in write
+    self.wfile.write(data)
+IOError: [Errno 32] Broken pipe
+192.168.1.40 - - [31/Aug/2018 23:53:06] "GET /static/images/bg.jpg HTTP/1.1" 200 -
+Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 242, in write
+    self.wfile.write(data)
+IOError: [Errno 131] Connection reset by peer
+192.168.1.40 - - [31/Aug/2018 23:53:06] "GET /static/images/bg.jpg HTTP/1.1" 200 -
+192.168.1.40 - - [31/Aug/2018 23:53:07] "GET /static/images/bg.jpg HTTP/1.1" 200 -
+Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 242, in write
+    self.wfile.write(data)
+IOError: [Errno 131] Connection reset by peer
+192.168.1.40 - - [31/Aug/2018 23:53:18] "GET /wx?weixin_wifi_shopId=6396206&weixin_wifi_bssid=20:76:93:3a:b4:e2&originid=&jumpsrc=jumpfromfinishpage&isContact=1&weixin_wifi_ssid=WX%E4%BD%A0%E4%B8%BA%E4%BD%95%E6%94%BE%E5%BC%83%E6%B2%BB%E7%96%97?&openId= HTTP/1.1" 302 -
+192.168.1.40 - - [31/Aug/2018 23:53:18] "GET / HTTP/1.1" 302 -
+Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 242, in write
+    self.wfile.write(data)
+IOError: [Errno 32] Broken pipe
+Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 242, in write
+    self.wfile.write(data)
+IOError: [Errno 32] Broken pipe
+192.168.1.4 - - [01/Sep/2018 00:00:00] "GET /black_list.txt HTTP/1.1" 404 -
+192.168.1.5 - - [01/Sep/2018 00:00:00] "GET /black_list.txt HTTP/1.1" 404 -
+Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 238, in write
+    self.send_header('Date', self.date_time_string())
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 401, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+192.168.1.41 - - [01/Sep/2018 00:11:11] "GET /system HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:11:12] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:11:13] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:12:27] "GET /system HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:12:27] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:12:29] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:12:58] "GET /system HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:12:58] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:13:00] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:13:52] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:20:43] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:21:56] "GET /system HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:21:56] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:21:58] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:22:58] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:23:04] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:23:05] "GET /info/white_list_info HTTP/1.1" 200 -
+ * Detected change in '/usr/local/eas/index.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 631-752-390
+192.168.1.41 - - [01/Sep/2018 00:23:39] "GET /info/white_list_info HTTP/1.1" 200 -
+ * Detected change in '/usr/local/eas/index.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 631-752-390
+192.168.1.41 - - [01/Sep/2018 00:24:08] "GET /info/white_list_info HTTP/1.1" 200 -
+ * Detected change in '/usr/local/eas/index.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 631-752-390
+192.168.1.41 - - [01/Sep/2018 00:27:05] "GET /info/white_list_info HTTP/1.1" 200 -
+ * Detected change in '/usr/local/eas/index.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 631-752-390
+ * Detected change in '/usr/local/eas/index.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 631-752-390
+192.168.1.41 - - [01/Sep/2018 00:31:27] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:32:26] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:32:52] "GET /info/white_list_info HTTP/1.1" 200 -
+ * Detected change in '/usr/local/eas/index.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 631-752-390
+192.168.1.41 - - [01/Sep/2018 00:37:57] "GET /info/white_list_info HTTP/1.1" 200 -
+/usr/local/lib/python2.7/dist-packages/werkzeug/filesystem.py:63: BrokenFilesystemWarning: Detected a misconfigured UNIX filesystem: Will use UTF-8 as filesystem encoding instead of 'ANSI_X3.4-1968'
+  BrokenFilesystemWarning)
+192.168.1.41 - - [01/Sep/2018 00:38:36] "GET /info/white_list_info HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1741, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/eas/index.py", line 132, in white_list_info
+    return render_template('white_list_info.html',white_list_results=white_list_result,speed_results=speed_result,mac_results=mac_result,name_results=name_result)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/eas/templates/white_list_info.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/usr/local/eas/templates/base.html", line 41, in top-level template code
+    {% block body %}
+  File "/usr/local/eas/templates/white_list_info.html", line 47, in block "body"
+    <td bgcolor="#FFFFFF"><font class="chain-size">{{speed_result[i]}}</font></td>
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 411, in getitem
+    return obj[argument]
+UndefinedError: 'speed_result' is undefined
+192.168.1.41 - - [01/Sep/2018 00:38:37] "GET /info/white_list_info?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:38:37] "GET /info/white_list_info?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:38:37] "GET /info/white_list_info?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:38:37] "GET /info/white_list_info?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:38:37] "GET /info/white_list_info?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:38:47] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:39:16] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:40:10] "GET /info/white_list_info HTTP/1.1" 200 -
+ * Detected change in '/usr/local/eas/index.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 631-752-390
+192.168.1.41 - - [01/Sep/2018 00:40:48] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:41:42] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:47:35] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:52:50] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:52:51] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:52:51] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:52:53] "GET /info/system_info HTTP/1.1" 200 -
+/usr/local/lib/python2.7/dist-packages/werkzeug/filesystem.py:63: BrokenFilesystemWarning: Detected a misconfigured UNIX filesystem: Will use UTF-8 as filesystem encoding instead of 'ANSI_X3.4-1968'
+  BrokenFilesystemWarning)
+Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 401, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+192.168.1.41 - - [01/Sep/2018 00:52:54] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:52:54] "GET /info/qr_info HTTP/1.1" 200 -
+Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 236, in write
+    self.send_header('Server', self.version_string())
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 401, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+192.168.1.41 - - [01/Sep/2018 00:52:56] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:52:56] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:52:56] "GET /info/black_list_info HTTP/1.1" 200 -
+Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 401, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 401, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+192.168.1.41 - - [01/Sep/2018 00:52:56] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:55:55] "GET / HTTP/1.1" 302 -
+192.168.1.41 - - [01/Sep/2018 00:55:55] "GET /status?mac=24%3A0a%3A64%3A30%3Af1%3A2e HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:55:55] "GET /static/css/style.css HTTP/1.1" 304 -
+192.168.1.41 - - [01/Sep/2018 00:55:55] "GET /static/images/bg.jpg HTTP/1.1" 304 -
+192.168.1.41 - - [01/Sep/2018 00:56:00] "GET /system HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:56:00] "GET /system HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:56:00] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:56:00] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 00:56:02] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 00:57:11] "GET / HTTP/1.1" 302 -
+192.168.1.1 - - [01/Sep/2018 00:57:11] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 00:57:11] "GET /static/css/styles.css HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 00:57:11] "GET /static/images/logo.jpg HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 00:57:12] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.1 - - [01/Sep/2018 00:57:12] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 00:57:12] "GET /static/images/qr.png HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 00:57:15] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 00:58:12] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 00:58:14] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 00:58:15] "GET / HTTP/1.1" 302 -
+192.168.1.40 - - [01/Sep/2018 00:58:15] "GET /status?mac=4c%3A49%3Ae3%3A54%3A89%3A7c HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 00:58:15] "GET /static/css/style.css HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 00:58:15] "GET /static/images/bg.jpg HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 00:58:15] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.40 - - [01/Sep/2018 13:16:16] "GET / HTTP/1.1" 302 -
+192.168.1.40 - - [01/Sep/2018 13:16:16] "GET /status?mac=4c%3A49%3Ae3%3A54%3A89%3A7c HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 13:16:16] "GET /static/css/style.css HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 13:16:16] "GET /static/images/bg.jpg HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 13:16:16] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.40 - - [01/Sep/2018 13:16:33] "GET /system HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 13:16:33] "GET /static/css/styles.css HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 13:16:33] "GET /static/images/logo.jpg HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 13:16:33] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 13:16:33] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.40 - - [01/Sep/2018 13:16:33] "GET /static/images/qr.png HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 13:16:34] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 13:16:45] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 13:16:45] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 13:16:46] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 13:16:48] "GET /info/white_list_info HTTP/1.1" 200 -
+Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 242, in write
+    self.wfile.write(data)
+IOError: [Errno 32] Broken pipe
+192.168.1.40 - - [01/Sep/2018 13:17:09] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 13:17:31] "GET /login?mac=00%3Ab3%3A62%3Ab2%3Af4%3A73&num=7084&button=%E6%B7%BB%E5%8A%A0%E7%99%BD%E5%90%8D%E5%8D%95 HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 13:17:31] "GET /static/images/user.png HTTP/1.1" 404 -
+192.168.1.40 - - [01/Sep/2018 13:17:36] "GET /check?user=%E7%8F%8A&mac=00%3Ab3%3A62%3Ab2%3Af4%3A73 HTTP/1.1" 302 -
+192.168.1.40 - - [01/Sep/2018 13:17:36] "GET /status HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 13:17:52] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 17:24:51] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 17:24:51] "GET /static/css/styles.css HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 17:24:51] "GET /static/images/logo.jpg HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 17:24:52] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 17:24:52] "GET /static/images/qr.png HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 17:24:53] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 17:25:15] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 17:25:35] "GET /clear_info HTTP/1.1" 302 -
+192.168.1.1 - - [01/Sep/2018 17:25:35] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 17:25:37] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 17:25:37] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 17:25:38] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 17:25:39] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 17:25:40] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 17:25:40] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 17:25:41] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 17:25:51] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 17:26:12] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 17:26:12] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 17:26:13] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 17:26:14] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 18:31:26] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 18:31:26] "GET /static/css/styles.css HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 18:31:26] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 18:41:18] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00\xc6\x01\x00\x00\xc2\x03\x03\x08\xaa\x95\xf1\xa8\xc9\xda\xf1\x94\xca\xa8')
+192.168.1.41 - - [01/Sep/2018 18:41:18] " �  �������ʨ�`�?�{�Ѭ��~k�\7"N  " 400 -
+192.168.1.41 - - [01/Sep/2018 18:47:25] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00\xc7\x01\x00\x00\xc3\x03\x031\xab-\x85b\x17')
+192.168.1.41 - - [01/Sep/2018 18:47:25] " �  �1�-�bӿ)�MW!G}�4,�U" 400 -
+192.168.1.41 - - [01/Sep/2018 18:47:27] code 400, message Bad request version ('\x05\x14T\xeb\x02;\xa3n\x00\x00\x1czz\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\x13\xc0\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+192.168.1.41 - - [01/Sep/2018 18:47:27] " �  �qhI 1Oze=Ti���Z�P\3�	T�;�n  zz�+�/�,�0̨̩�� � � / 5 " 400 -
+192.168.1.41 - - [01/Sep/2018 18:47:47] "GET / HTTP/1.1" 302 -
+192.168.1.41 - - [01/Sep/2018 18:47:47] "GET /status?mac=24%3A0a%3A64%3A30%3Af1%3A2e HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 18:47:47] "GET /static/css/style.css HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 18:47:48] "GET /static/images/bg.jpg HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 18:52:58] "GET /wx?weixin_wifi_shopId=6396206&weixin_wifi_bssid=64:09:80:68:f7:30&originid=&jumpsrc=jumpfromfinishpage&isContact=1&weixin_wifi_ssid=WX%E4%BD%A0%E4%B8%BA%E4%BD%95%E6%94%BE%E5%BC%83%E6%B2%BB%E7%96%97?&openId= HTTP/1.1" 302 -
+192.168.1.40 - - [01/Sep/2018 18:52:58] "GET / HTTP/1.1" 302 -
+192.168.1.40 - - [01/Sep/2018 18:52:58] "GET /status?mac=4c%3A49%3Ae3%3A54%3A89%3A7c HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 18:52:58] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.40 - - [01/Sep/2018 18:53:04] "GET /status?mac=4c%3A49%3Ae3%3A54%3A89%3A7c&nsukey=xpLt8fKdo5OxvVT0xgXv1sbyksXckmOz6Vimm5ZPIWtiKgG%2BXhOuJ75yCugU4Cu8VkMhp6SGiZyMbdbaW7EsoqGhHfnPsc%2BB8WUuDIIMYr%2BpLPz0Kl4mpRV0tk8Hyp5OUZK%2Bo2WA7pnmdNy7x0Wu3Xppbn1hwNI2ulYd7w6Kg3loFgvAEMQGA6qftjLcFTH42UU5p6QeAcmIcHUAAnXxAA%3D%3D HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 18:53:04] "GET /static/css/style.css HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 18:53:04] "GET /static/images/bg.jpg HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 18:54:15] "GET /system HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 18:54:15] "GET /static/css/styles.css HTTP/1.1" 304 -
+192.168.1.41 - - [01/Sep/2018 18:54:15] "GET /static/images/logo.jpg HTTP/1.1" 304 -
+192.168.1.41 - - [01/Sep/2018 18:54:15] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 18:54:15] "GET /static/images/qr.png HTTP/1.1" 304 -
+192.168.1.41 - - [01/Sep/2018 18:54:17] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 18:54:30] "GET /changemac?mac_name=%E7%B1%B36&mac=4c%3A49%3Ae3%3A54%3A89%3A7c&type=white_list_info&button=%E5%88%A0%E9%99%A4 HTTP/1.1" 302 -
+192.168.1.41 - - [01/Sep/2018 18:54:31] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 18:55:21] "GET /wx?weixin_wifi_shopId=6396206&weixin_wifi_bssid=&originid=&jumpsrc=jumpfromfinishpage&isContact=1&weixin_wifi_ssid=&openId=&nsukey=HIGp96jWoSn%2FpSOt4w%2BLO4ADSqCwnM35HGzPwqdIHK2d82wFGqSKbJIU2powvxyIy7ZJxrNDx1zVglNljyN%2FMafzM2FKxEZgHY29QjvMaI9b7YCBkoaufYyrrzUrArl2T%2FA8SkUow7Hb5D6S9n8e8CpIMnKMaEsL3pEvu%2BWjuFwN3WKWc5e7RdyHBJvZXy%2BVa6BN6FCdNvZSNCQyOdDwXA%3D%3D HTTP/1.1" 302 -
+192.168.1.40 - - [01/Sep/2018 18:55:21] "GET / HTTP/1.1" 302 -
+192.168.1.40 - - [01/Sep/2018 18:55:21] "GET /login?mac=4c%3A49%3Ae3%3A54%3A89%3A7c HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 18:55:21] "GET /static/images/user.png HTTP/1.1" 404 -
+192.168.1.40 - - [01/Sep/2018 18:55:21] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.40 - - [01/Sep/2018 18:55:25] "GET /check?user=%E7%B1%B36&mac=4c%3A49%3Ae3%3A54%3A89%3A7c HTTP/1.1" 302 -
+192.168.1.40 - - [01/Sep/2018 18:55:25] "GET /status HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 18:55:29] "GET /status?nsukey=4IJ0RJ8numYIBLfpKBbA4vVfOvyT4wptd5VigivuzNhjFPBHrKn7TJgfObDTMQyg2E5OWlELpj85oPAl%2Fjifrut0Jm%2BmSNsbuj9WP%2Bf3VqhqRYzuGy5qn863kRKCSKDh5cBqg%2BqkP5nECN5LWexDU%2B%2FnIA4NyljILWk9slxl5rEKeX2gudYHBzaldDjIXcCH5PIIZk22S6aF4sb7vDfcBA%3D%3D HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 18:55:39] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 18:55:47] "GET /info/system_info HTTP/1.1" 200 -
+ * Detected change in '/usr/local/eas/index.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 631-752-390
+192.168.1.41 - - [01/Sep/2018 19:07:00] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 19:07:30] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 19:07:44] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 19:07:45] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 19:07:45] "GET /info/mac_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 19:07:46] "GET /info/system_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 19:07:46] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 19:07:47] "GET /info/black_list_info HTTP/1.1" 200 -
+192.168.1.41 - - [01/Sep/2018 19:07:47] "GET /info/white_list_info HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 19:12:10] "GET /system HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 19:12:11] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 19:12:11] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.6 - - [01/Sep/2018 19:33:42] "GET /black_list.txt HTTP/1.1" 404 -
+/usr/local/lib/python2.7/dist-packages/werkzeug/filesystem.py:63: BrokenFilesystemWarning: Detected a misconfigured UNIX filesystem: Will use UTF-8 as filesystem encoding instead of 'ANSI_X3.4-1968'
+  BrokenFilesystemWarning)
+Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 242, in write
+    self.wfile.write(data)
+IOError: [Errno 131] Connection reset by peer
+192.168.1.1 - - [01/Sep/2018 20:13:42] "GET / HTTP/1.1" 302 -
+192.168.1.1 - - [01/Sep/2018 20:13:42] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 20:13:42] "GET /static/css/styles.css HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 20:13:42] "GET /static/images/logo.jpg HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 20:23:00] "GET /wx?weixin_wifi_shopId=6396206&weixin_wifi_bssid=20:76:93:3a:b4:e2&originid=&jumpsrc=jumpfromfinishpage&isContact=1&weixin_wifi_ssid=WX%E4%BD%A0%E4%B8%BA%E4%BD%95%E6%94%BE%E5%BC%83%E6%B2%BB%E7%96%97?&openId= HTTP/1.1" 302 -
+192.168.1.40 - - [01/Sep/2018 20:23:00] "GET / HTTP/1.1" 302 -
+192.168.1.40 - - [01/Sep/2018 20:23:00] "GET /status?mac=4c%3A49%3Ae3%3A54%3A89%3A7c HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 20:23:03] "GET /status?mac=4c%3A49%3Ae3%3A54%3A89%3A7c&nsukey=6KSjsmlBnrXwrJGZzsh7S%2BpkdubBqOlf0LqkYao6usZJVSYQMdVBHvR8bgiJYzHd2TQ0ZM9VKB2jCO6cKXZi2VWdanShfw6zIgRK%2BKysCFyvUfWbBulwQwDD4Yp3ed%2FyfFfqWPQKFSmhfWZyQmh11obJxlcsmCtMZLFaoVkEJiZg1Cwi6AFdlzNC3Zqh09eYu5gndBV6LloFodO7NybPFw%3D%3D HTTP/1.1" 200 -
+192.168.1.40 - - [01/Sep/2018 20:23:04] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.1 - - [01/Sep/2018 21:19:55] "GET / HTTP/1.1" 302 -
+192.168.1.1 - - [01/Sep/2018 21:19:55] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 21:19:55] "GET /static/css/styles.css HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 21:19:55] "GET /static/images/logo.jpg HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 21:19:55] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 21:19:56] "GET /static/images/qr.png HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 21:19:59] "GET / HTTP/1.1" 302 -
+192.168.1.1 - - [01/Sep/2018 21:19:59] "GET /system HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 21:19:59] "GET /static/css/styles.css HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 21:19:59] "GET /static/images/logo.jpg HTTP/1.1" 200 -
+192.168.1.1 - - [01/Sep/2018 21:19:59] "GET /info/qr_info HTTP/1.1" 200 -
+Error on request:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 270, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 261, in execute
+    write(data)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 227, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 401, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+192.168.1.4 - - [02/Sep/2018 00:00:00] "GET /black_list.txt HTTP/1.1" 404 -
+192.168.1.5 - - [02/Sep/2018 00:00:00] "GET /black_list.txt HTTP/1.1" 404 -
+192.168.1.40 - - [02/Sep/2018 01:06:09] "GET /wx?weixin_wifi_shopId=6396206&weixin_wifi_bssid=20:76:93:3a:b4:e2&originid=&jumpsrc=jumpfromfinishpage&isContact=1&weixin_wifi_ssid=WX%E4%BD%A0%E4%B8%BA%E4%BD%95%E6%94%BE%E5%BC%83%E6%B2%BB%E7%96%97?&openId= HTTP/1.1" 302 -
+192.168.1.40 - - [02/Sep/2018 01:06:09] "GET / HTTP/1.1" 302 -
+192.168.1.40 - - [02/Sep/2018 01:06:09] "GET /status?mac=4c%3A49%3Ae3%3A54%3A89%3A7c HTTP/1.1" 200 -
+192.168.1.40 - - [02/Sep/2018 01:06:23] "GET /status?mac=4c%3A49%3Ae3%3A54%3A89%3A7c&nsukey=dCt2U642LlFXeWhODmAORYGjqML8RSkIq7t9I1W0QkP0gOxuYkXfeXeRbI8a%2BHr6lfeXScDSxKu8U3gMKebuMhKeS2ABjk9EyW%2B%2Few2DeC67xujqR8HWsparW5VcI2EvKoY%2FBjb6zCzscsfIvKRQG3kZGCNdk3LtX4fD6t1L%2FqYjvnsluZL%2FLG2r5P%2FuxS3wvD4DhmO1ZHtHnyfJLLyjtg%3D%3D HTTP/1.1" 200 -
+192.168.1.40 - - [02/Sep/2018 01:06:24] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.41 - - [02/Sep/2018 01:36:32] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00\xc3\x01\x00\x00\xbf\x03\x03\x9d\x92|\xe9$`O\xef\x01\x96\xc1\x1e\xa2\xad\xd6.\x12\xbc')
+192.168.1.41 - - [02/Sep/2018 01:36:32] " �  ���|�$`O������.��*֥�ʹ��x��  ���+�/�,�0̨̩�� � � / 5 " 400 -
+192.168.1.41 - - [02/Sep/2018 01:36:34] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.41 - - [02/Sep/2018 01:36:35] "GET / HTTP/1.1" 302 -
+192.168.1.41 - - [02/Sep/2018 01:36:35] "GET /status?mac=24%3A0a%3A64%3A30%3Af1%3A2e HTTP/1.1" 200 -
+192.168.1.41 - - [02/Sep/2018 01:36:37] "GET /static/css/style.css HTTP/1.1" 304 -
+192.168.1.41 - - [02/Sep/2018 01:36:37] "GET /static/images/bg.jpg HTTP/1.1" 304 -
+ * Detected change in '/usr/local/eas/index.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 631-752-390
+ * Serving Flask app "index" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 631-752-390
+192.168.1.41 - - [02/Sep/2018 01:48:04] "GET / HTTP/1.1" 302 -
+192.168.1.41 - - [02/Sep/2018 01:48:04] "GET /status?mac=24%3A0a%3A64%3A30%3Af1%3A2e HTTP/1.1" 200 -
+192.168.1.41 - - [02/Sep/2018 01:48:08] "GET /system HTTP/1.1" 200 -
+192.168.1.41 - - [02/Sep/2018 01:48:08] "GET /static/images/logo.jpg HTTP/1.1" 200 -
+192.168.1.41 - - [02/Sep/2018 01:48:08] "GET /static/css/styles.css HTTP/1.1" 200 -
+192.168.1.41 - - [02/Sep/2018 01:48:08] "GET /info/qr_info HTTP/1.1" 200 -
+192.168.1.41 - - [02/Sep/2018 01:48:08] "GET /static/images/qr.png HTTP/1.1" 200 -
+192.168.1.41 - - [02/Sep/2018 01:48:17] "GET / HTTP/1.1" 302 -
+192.168.1.41 - - [02/Sep/2018 01:48:17] "GET /status?mac=24%3A0a%3A64%3A30%3Af1%3A2e HTTP/1.1" 200 -
+192.168.1.40 - - [02/Sep/2018 01:50:15] "GET /wx?weixin_wifi_shopId=6396206&weixin_wifi_bssid=64:09:80:68:f7:30&originid=&jumpsrc=jumpfromfinishpage&isContact=1&weixin_wifi_ssid=WX%E4%BD%A0%E4%B8%BA%E4%BD%95%E6%94%BE%E5%BC%83%E6%B2%BB%E7%96%97?&openId= HTTP/1.1" 302 -
+192.168.1.40 - - [02/Sep/2018 01:50:15] "GET / HTTP/1.1" 302 -
+192.168.1.40 - - [02/Sep/2018 01:50:16] "GET /status?mac=4c%3A49%3Ae3%3A54%3A89%3A7c HTTP/1.1" 200 -
+192.168.1.40 - - [02/Sep/2018 01:50:16] "GET /static/css/style.css HTTP/1.1" 200 -
+192.168.1.40 - - [02/Sep/2018 01:50:16] "GET /static/images/bg.jpg HTTP/1.1" 200 -
+192.168.1.40 - - [02/Sep/2018 01:50:16] "GET /favicon.ico HTTP/1.1" 404 -

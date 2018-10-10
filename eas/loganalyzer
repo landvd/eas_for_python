@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+export PATH #下面语句，读取系统日志并分析出MAC地址
+cat /var/log/messages | grep -o '\<[0-9a-f]\{2\}:[0-9a-f]\{2\}:[0-9a-f]\{2\}:[0-9a-f]\{2\}:[0-9a-f]\{2\}:[0-9a-f]\{2\}:[0-9a-f]\{2\}:[0-9a-f]\{2\}:[0-9a-f]\{2\}:[0-9a-f]\{2\}:[0-9a-f]\{2\}:[0-9a-f]\{2\}:[0-9a-f]\{2\}:[0-9a-f]\{2\}\>' | awk -F ':' '{print substr($0,19,17);}' | awk '{count[$0]++}END{for(mac in count)printf("%s#%d\n",mac,count[mac])}' > /usr/local/eas/log
+for count in $(cat '/usr/local/eas/log'); do #读取分析出的MAC地址和数量
+	num=${count:18:22} #提取数量
+	mac=${count:0:17}  #提取MAC
+	if [ $num -ge "20000" ] # 如果MAC访问数量大于3000
+	then
+		black=$(iptables -L black_list -nv) #列出黑名单链MAC数据
+		mac=`echo $mac | tr '[:lower:]' '[:upper:]'` #将MAC转为大写
+		if [[ ! $black =~ $mac ]];then #如果MAC地址不存在黑名单链，执行下面二条语句，加入黑名单链和写入黑名单文件
+		iptables -A black_list -m mac --mac-source ${mac:0:17} -j DROP		
+		echo $count >> /usr/local/eas/black_list
+		echo $mac >> /var/www/wifi/black_list.txt
+		fi
+	fi
+  done

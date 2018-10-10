@@ -1,0 +1,87 @@
+<html>
+<head>
+<style type="text/css">
+.bt2 {
+	width: 160px;
+	height: 40px;
+	font-size: 16px;
+}
+</style>
+</head>
+<body>
+<table width="850" border="0" cellspacing="1" cellpadding="2" bgcolor="#0099CC">
+<tr  align="center" width="70%">
+<td bgcolor="#0099CC"><font color="#FFFFFF">MAC地址</font></td>
+<td bgcolor="#0099CC"><font color="#FFFFFF">访问量</font></td>
+<td bgcolor="#0099CC"><font color="#FFFFFF">白名单</font></td>
+<td bgcolor="#0099CC"><font color="#FFFFFF">黑名单</font></td>
+<td bgcolor="#0099CC"><font color="#FFFFFF"><a href="/clear_info">清空信息</a></font></td>
+</tr>
+
+{% for key in mac_acc_nums %}
+<tr align="center" height="60">
+<form id="form1" name="form1" method="get" action="/login">
+<input name="mac" type="hidden" id="mac" value="{{key}}"/>
+<input name="num" type="hidden" id="num" value="{{mac_acc_nums[key]}}" />
+<td bgcolor="#FFFFFF">{{key}}</font></td>
+<td bgcolor="#FFFFFF">{{mac_acc_nums[key]}}</font></td>
+<td bgcolor="#FFFFFF"><input name="button"  class="bt2" type="submit" id="button" value="添加白名单" /></font></td>
+</form>
+<form id="form1" name="form1" method="get" action="/changemac">
+<input name="mac" type="hidden" id="mac" value="{{key}}"/>
+<input name="num" type="hidden" id="num" value="{{mac_acc_nums[key]}}" />
+<td bgcolor="#FFFFFF" colspan="2"><input name="button"  class="bt2" type="submit" id="button" value="添加黑名单" /></font></td>
+</form>
+</tr>
+{% endfor %}
+<tr align="center" width="70%">
+<td bgcolor="#0099CC"><font color="#FFFFFF">访问时间</font></td>
+<td bgcolor="#0099CC"><font color="#FFFFFF">源地址</font></td>
+<td bgcolor="#0099CC" align="center"><font color="#FFFFFF">目的地址</font></td>
+<td bgcolor="#0099CC" align="center" ><font color="#FFFFFF">MAC地址</font></td>
+</tr>
+{% for i in range(mac_results|length)%}
+<tr align="center" height="20">
+<td bgcolor="#FFFFFF">
+{{ time_results[i+time_results|length-mac_results|length]}}
+</td>
+<td bgcolor="#FFFFFF" >
+{{ ip_results[i]}}
+</td>
+<td bgcolor="#FFFFFF">
+{{ dst_results[i]}}
+</td>
+<td bgcolor="#FFFFFF" colspan="2">
+{{ mac_results[i]}}
+</td>
+</tr>
+{% endfor %}
+<tr align="center" width="70%">
+<td bgcolor="#0099CC"><font color="#FFFFFF">目的地址</font></td>
+<td bgcolor="#0099CC"><font color="#FFFFFF">访问总计</font></td>
+<td bgcolor="#0099CC"><font color="#FFFFFF">目的地址</font></td>
+<td bgcolor="#0099CC"><font color="#FFFFFF" colspan="2">访问总计</font></td>
+</tr>
+{% for key in dst_acc_nums %}
+<tr align="center" height="20">
+<td bgcolor="#FFFFFF">
+{{key}}
+</td>
+<td bgcolor="#FFFFFF">
+{{dst_acc_nums[key]}}
+</td>
+<td bgcolor="#FFFFFF">
+{{key}}
+</td>
+<td bgcolor="#FFFFFF" colspan="2">
+{{dst_acc_nums[key]}}
+</td>
+</tr>
+{% endfor%}
+</table>
+{% for key in dst_acc_nums %}
+iptables -A white_list -d {{key}}  -m comment --comment "小米服务器" -j RETURN
+<br>
+{% endfor %}
+</body>
+</html>

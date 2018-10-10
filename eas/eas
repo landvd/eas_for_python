@@ -1,0 +1,19 @@
+#!/bin/sh
+iptables -N white_list  #新建白名单链
+iptables -N black_list  #新建黑名单链
+  for mac in $(cat '/usr/local/eas/white_list'); do   #循环读取白名单地址，写入防火墙
+	iptables -A white_list -m mac --mac-source ${mac:0:17} -m comment --comment "${mac:18:30}" -j RETURN
+    iptables -A white_list -m mac --mac-source "01"${mac:2:15} -m comment --comment "${mac:18:30}" -j RETURN
+  done
+  for mac in $(cat '/usr/local/eas/black_list'); do    #循环读取黑名单地址，写入防火墙
+	iptables -A black_list -m mac --mac-source ${mac:0:17} -j DROP
+  done
+#iptables -I VYATTA_FW_OUT_HOOK -o pppoe0 -j white_list #将白名单链加入系统链，非PPPOE用户自行修改出口
+#iptables -I VYATTA_FW_OUT_HOOK -o pppoe0 -j black_list  #将黑名单链加入系统链，非PPPOE用户自行修改出口
+iptables -I VYATTA_FW_IN_HOOK -i switch0 -j white_list #将白名单链加入系统链，非PPPOE用户自行修改出口
+#iptables -I VYATTA_FW_IN_HOOK -i switch0 -j black_list  #将黑名单链加入系统链，非PPPOE用户自行修改出口
+#iptables -I VYATTA_FW_LOCAL_HOOK -i switch0 -j black_list #将黑名单链加入系统链，非switch0接口用户自行修改
+/usr/local/bin/supervisord
+chmod 644 /var/log/messages #配置系统日志文件权限
+sleep 60
+/usr/local/eas/wx_iptables

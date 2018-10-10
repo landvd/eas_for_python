@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block body %}
+ <table width="850" border="0" cellspacing="1" cellpadding="2" bgcolor="#0099CC">
+ <tr  align="center">
+<td bgcolor="#0099CC"><font color="#FFFFFF">白名单MAC</font></td>
+ <td bgcolor="#0099CC"><font color="#FFFFFF">设备名</font></td>
+ <td bgcolor="#0099CC" colspan="2"><font color="#FFFFFF" >操作</font></td>
+ </tr>
+ <tr  align="center">
+ <form id="form1" name="form1" method="get" action="/check" onSubmit="return Validator.Validate(this,1)">
+ <td bgcolor="#FFFFFF" height="100"><font color="#FFFFFF"><input name="mac" type="text"  class="input" id="mac" min="12" maxlength="17" dataType="LimitB" msg="请填入12-17位MAC地址"/></font></td>
+ <td bgcolor="#FFFFFF"><font color="#FFFFFF"><input name="user" type="text"  class="input" id="user" dataType="Require" msg="昵称不能为空" /></font></td>
+ <td bgcolor="#FFFFFF" colspan="2"><input name="button2" class="bt" type="submit" id="button2" value="添加" /></td>
+ </form>
+ </tr>
+{% for white_list_result in white_list_results%}
+<form id="form2" name="form2" method="get" action="/changemac" onsubmit="return sumbit_sure()">
+<tr align="center" height="80">
+<td bgcolor="#FFFFFF">
+{{white_list_result[0:17]}}
+<input name="mac_name" type="hidden" id="mac_name" value="{{white_list_result[18:]}}"/>
+<input name="mac" type="hidden" id="mac" value="{{white_list_result[0:17]}}" />
+<input name="type" type="hidden" id="type" value="white_list_info" />
+</td>
+<td bgcolor="#FFFFFF">
+{{white_list_result[18:]}}
+</td>
+<td bgcolor="#FFFFFF">
+<input name="button" class="bt2" type="submit" id="button" value="置顶" />
+</td>
+<td bgcolor="#FFFFFF">
+<input name="button" class="bt2" type="submit" id="button" value="删除" />
+</td>
+</tr>
+</form>
+{% endfor %}
+</table>
+
+ <table width="850" border="0" cellspacing="1" cellpadding="2" bgcolor="#0099CC">
+ <tr  align="center">
+ <td bgcolor="#0099CC"><font color="#FFFFFF">报文数/字节数</font></td>
+ <td bgcolor="#0099CC"><font color="#FFFFFF">MAC</font></td>
+ <td bgcolor="#0099CC" colspan="2"><font color="#FFFFFF">设备名</font></td>
+ </tr>
+{% for i in range(mac_results|length)%}
+  <tr  align="center">
+ <td bgcolor="#FFFFFF"><font class="chain-size">{{speed_results[i]}}</font></td>
+ <td bgcolor="#FFFFFF"><font class="chain-size">{{mac_results[i]}}</font></td>
+ <td bgcolor="#FFFFFF" colspan="2"><font class="chain-size">{{name_results[i]}}</font></td>
+ </tr>
+{% endfor %}
+ </table>
+   {% endblock %}	

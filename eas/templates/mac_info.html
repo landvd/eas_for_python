@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block body %}
+<table width="850" border="0" cellspacing="1" cellpadding="2" bgcolor="#0099CC">
+<tr  align="center" width="70%">
+<td bgcolor="#0099CC"><font color="#FFFFFF">MAC</font></td>
+<td bgcolor="#0099CC"><font color="#FFFFFF">访问数</font></td>
+</tr>
+{% for log_result in log%}
+<tr align="center" height="80">
+<td bgcolor="#FFFFFF">
+{{log_result[0:17]}}
+</td>
+<td bgcolor="#FFFFFF">
+{{log_result[18:]}}
+</td>
+</tr>
+{% endfor %}
+</table>
+  {% endblock %}

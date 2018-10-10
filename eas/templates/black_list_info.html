@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block body %}
+<table width="850" border="0" cellspacing="1" cellpadding="2" bgcolor="#0099CC">
+<tr  align="center">
+<td bgcolor="#0099CC"><font color="#FFFFFF">黑名单MAC</font></td>
+<td bgcolor="#0099CC"><font color="#FFFFFF">访问数</font></td>
+<td bgcolor="#0099CC"><font color="#FFFFFF">操作</font></td>
+</tr>
+<tr  align="center">
+<form id="form1" name="form1" method="get" action="/changemac" onSubmit="return Validator.Validate(this,1)">
+<td bgcolor="#FFFFFF" height="100"><font color="#FFFFFF"><input name="mac" type="text"  class="input" id="mac" min="12" maxlength="17" dataType="LimitB" msg="请填入12-17位MAC地址"/></font></td>
+<td bgcolor="#FFFFFF"><font color="#FFFFFF"><input name="num" type="text"  class="input" id="num" dataType="Range" min="1" max="6000" msg="输入范围在1-6000之间" /></font></td>
+<td bgcolor="#FFFFFF"><input name="button" class="bt" type="submit" id="button" value="添加黑名单" /></td>
+<input name="type" type="hidden" id="type" value="add_black_list" />
+</form>
+</tr>
+{% for black_list_result in black_list_results%}
+<form id="form2" name="form2" method="get" action="/changemac" onsubmit="return sumbit_sure()">
+<tr align="center" height="80">
+<td bgcolor="#FFFFFF">
+{{black_list_result[0:17]}}
+<input name="num" type="hidden" id="num" value="{{black_list_result[18:]}}"/>
+<input name="mac" type="hidden" id="mac" value="{{black_list_result[0:17]}}" />
+</td>
+<td bgcolor="#FFFFFF">
+{{black_list_result[18:]}}
+</td>
+<td bgcolor="#FFFFFF">
+<input name="button" type="submit" id="button" value="删除黑名单" />
+</td>
+</tr>
+</form>
+{% endfor %}
+</table>
+{% for result in black_list_cmd_results.splitlines()%}
+{{result}}
+<br>
+{% endfor %}
+  {% endblock %}

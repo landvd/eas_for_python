@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>EAS防蹭网系统管理页</title>
+<script  LANGUAGE="javascript">
+function system_info()
+{
+	document.getElementById("info").src="info/system_info";
+}
+function white_list_info()
+{
+	document.getElementById("info").src="info/white_list_info";
+}
+function black_list_info()
+{
+	document.getElementById("info").src="info/black_list_info";
+}
+function qr_info()
+{
+	document.getElementById("info").src="info/qr_info";
+}
+function mac_info()
+{
+	document.getElementById("info").src="info/mac_info";
+}
+</script>
+<link rel="stylesheet" href="static/css/styles.css" />
+</head>
+
+<body align="center" OnLoad="qr_info();">
+<ul class="fancyNav">
+<table border="1" width="880">
+<tr align="center">
+<td height="100" colspan="5"><img src="static/images/logo.jpg" width="895" height="100"/></td>
+</tr>
+<tr>
+  <td width="130"><li id="white_list_info"><a href="#" onclick="white_list_info()">白名单管理</a></li></td>
+  <td width="130"><li id="black_list_info"><a href="#" onclick="black_list_info()">黑名单管理</a></li></td>
+  <td width="140"><li id="mac_info"><a href="#" onclick="mac_info()">客户端访问统计</a></li></td>
+  <td width="140"><li id="system_info"><a href="#" onclick="system_info()">系 统 信 息</a></li></td>
+  <td width="140"><li id="dhcp_info"><a href="#" onclick="qr_info()">二维码信息</a></li></td>
+</tr>
+<tr>
+  <td colspan="5"><iframe id="info" width="880" height="1200"></iframe></td>
+</tr>
+</table>
+ </ul>
+</body>
+</html>
