@@ -1,0 +1,23 @@
+#!/bin/bash
+cp -f /usr/local/eas/10-ssl.conf /etc/lighttpd/conf-enabled/10-ssl.conf #复盖文件
+#sleep 60
+nohup /usr/local/eas/eas >> /usr/local/eas/eas_log 2>&1 &
+#function PidFind()  
+#{  
+#    PIDCOUNT=`ps -ef | grep $1 | grep -v "grep" | grep -v $0 | awk '{print $2}' | wc -l`;  
+#    if [ ${PIDCOUNT} -gt 1 ] ; then  
+#        echo "There are too many process contains name[$1]"  
+#    elif [ ${PIDCOUNT} -le 0 ] ; then  
+#        echo "No such process[$1]!"  
+#    else  
+#        PID=`ps -ef | grep $1 | grep -v "grep" | grep -v ".sh" | awk '{print $2}'` ;  
+#        echo "Find the PID of this progress!--- process:$1 PID=[${PID}] ";  
+#echo "Kill the process $1 ...";  
+#        kill -9  ${PID};  
+#        echo "kill -9 ${PID} $1 done!";  
+#    fi  
+#}  
+#PidFind /usr/sbin/lighttpd -f /etc/lighttpd/lighttpd.conf #关闭原厂lighttpd进程
+#PidFind python /var/www/python/gui.py #关闭原厂主进程
+#cp -f /usr/local/eas/10-ssl.conf /etc/lighttpd/conf-enabled/10-ssl.conf #复盖文件
+#/usr/sbin/lighttpd -f /etc/lighttpd/lighttpd.conf
